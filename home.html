@@ -5,28 +5,50 @@
             * {
                 box-sizing: border-box;
             }
+            .space{
+                margin-left: 100px;
+                margin-top: 100px;
+                margin-right: 100px;
+            }
+            .text-inf{
+                font-size: 40px;
 
-            /* Create two equal columns that floats next to each other */
+            }
+            .text-in{
+                font-size: 30px;
+
+            }
+            .button_size{
+                font-size: 30px;
+            }
             .column {
+       
                 float: left;
-                padding: 10px;
-                height: 300px; /* Should be removed. Only for demonstration */
+                padding: 80px;
+                height: 300px; 
             }
 
-            /* Clear floats after the columns */
+            
             .row:after {
                 content: "";
                 display: table;
                 clear: both;
             }
         </style>
+      
     </head>
     <body>
         <div class="row">
             <div class="large-12">
-                <label for="line_height">Enter height: </label>
-                <input id="line_height" type="number" />
-                <button onclick="myFunction(); myFunction1();">Submit</button>
+                <div class="space">
+                    <h1>Aircover Excerise</h1>
+                    <p style="font-size: 20px;">Write and host a web application which asks the user for a vertical size, and then prints the letters “AC”, using their respective letters, to fill that height, at a letter line width ratio of 1 wide for every 4 high, with a minimum letter line size of 1.
+                    </p>
+                    <label class="text-inf" style="color:grey;" for="line_height">Enter the vertical size: </label>
+                    <input id="line_height" class="text-in" type="number" />
+                    <button type="button" style="background-color: #e7e7e7" class="button_size"onclick="myFunction(); myFunction1();">Submit</button>
+                </div>
+                
             </div>
         </div>
 
